@@ -1,0 +1,43 @@
+public class Rectangle {
+
+   private int Length;
+   private int Width;
+
+
+
+
+public Rectangle(int Length, int Width) {
+    this.Length = Length;
+    this.Width = Width;
+
+
+public int perimeter() {
+
+    int perimeter = this.Length * 2 + this.Width * 2;
+
+    return perimeter;
+}
+
+public boolean isSquare( ){
+    if(this.Length == this.Width){
+        return true;
+    }
+    else{
+        return false;
+    }
+}
+public double getArea(){
+    return this.Length * this.Width
+}
+public boolean isSmaller(Rectangle r1){
+    if(this.getArea() < r1.getArea() ){
+        return true;
+    }
+    else{
+        return false;
+    }
+}
+public static void main(String[] args){
+    
+}
+}
